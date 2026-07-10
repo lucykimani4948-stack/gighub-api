@@ -39,3 +39,29 @@ source teaching-2026/bin/activate  # Linux/Mac
 
 
 
+
+
+
+
+   \## Screenshots
+
+
+
+   \### Swagger UI
+
+   !\[Swagger UI](swagger-screenshot.png)
+
+
+
+   \### PostgreSQL Data
+
+   !\[PostgreSQL Data](postgres-screenshot.png)
+
+
+
+   \### GitHub Repository
+
+   !\[GitHub Repository](github-screenshot.png)
+
+
+
