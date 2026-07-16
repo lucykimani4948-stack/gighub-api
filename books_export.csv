@@ -1,0 +1,14 @@
+ID,Title,ISBN,Description,Price,Stock,Pages,Genre,Language,Rating,Reviews Count,Author ID,Author Name,Publisher ID,Publisher Name,Publication Date,Created At,Updated At
+2,A Game of Thrones,9780553103540,First book in A Song of Ice and Fire series,29.99,30,694,Fantasy,English,0.0,0,2,George R.R. Martin,2,HarperCollins,1996-08-01 00:00:00,2026-07-16 10:46:14.750112,2026-07-16 10:46:14.750303
+3,The Hobbit,9780547928227,Classic fantasy adventure,19.99,40,300,Fantasy,English,0.0,0,3,J.R.R. Tolkien,3,Simon & Schuster,1937-09-21 00:00:00,2026-07-16 10:46:14.750812,2026-07-16 10:46:14.750962
+4,The Shining,9780307743657,Classic horror novel,18.99,25,447,Horror,English,0.0,0,4,Stephen King,1,Penguin Random House,1977-01-28 00:00:00,2026-07-16 10:46:14.751256,2026-07-16 10:46:14.751441
+6,A Grain of Wheat,9780143026242,A novel about the Kenyan struggle for independence,18.99,30,288,Fiction,English,0.0,0,2,George R.R. Martin,1,Penguin Random House,,2026-07-16 10:52:26.266563,2026-07-16 10:52:26.266838
+7,We Should All Be Feminists,9781101873283,A powerful essay on feminism,12.99,60,64,Non-Fiction,English,0.0,0,3,J.R.R. Tolkien,2,HarperCollins,,2026-07-16 10:52:26.498714,2026-07-16 10:52:26.499026
+8,Purple Hibiscus,9781616201821,A coming-of-age novel set in Nigeria,16.99,35,320,Fiction,English,0.0,0,3,J.R.R. Tolkien,2,HarperCollins,,2026-07-16 10:52:28.635486,2026-07-16 10:52:28.635764
+9,Out of Stock Book,9781234567890,This book has no stock,9.99,0,100,Fiction,English,0.0,0,1,J.K. Rowling,1,Penguin Random House,,2026-07-16 10:56:25.224738,2026-07-16 10:56:25.225588
+10,Bulk Book 1,9781111111111,Created in bulk,10.99,20,150,Fiction,English,0.0,0,1,J.K. Rowling,1,Penguin Random House,,2026-07-16 10:56:43.923200,2026-07-16 10:56:43.923726
+11,Bulk Book 2,9782222222222,Also created in bulk,12.99,25,180,Non-Fiction,English,0.0,0,2,George R.R. Martin,1,Penguin Random House,,2026-07-16 10:56:43.940100,2026-07-16 10:56:43.940716
+1,Things Fall Apart (Updated),9780747532699,A classic novel about Nigerian tribal life - Updated Edition,19.99,80,223,Fantasy,English,4.5,2,1,J.K. Rowling,1,Penguin Random House,1997-06-26 00:00:00,2026-07-16 10:46:14.749037,2026-07-16 10:57:54.217529
+12,African Literature Vol 1,9783333333333,Collection of African literature,24.99,15,250,Literature,English,0.0,0,5,Chinua Achebe,1,Penguin Random House,,2026-07-16 11:01:29.941243,2026-07-16 11:01:29.941642
+13,African Literature Vol 2,9784444444444,More African literature,26.99,12,280,Literature,English,0.0,0,5,Chinua Achebe,1,Penguin Random House,,2026-07-16 11:01:29.953210,2026-07-16 11:01:29.953556
+14,Duplicate Book Test,9780385474542,This should fail with duplicate ISBN,10.99,10,100,Fiction,English,0.0,0,1,J.K. Rowling,1,Penguin Random House,,2026-07-16 11:41:18.844193,2026-07-16 11:41:18.844729
