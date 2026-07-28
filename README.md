@@ -1,82 +1,148 @@
-NAME:LUCY KIMANI
-
-REGISTRATION NUMBER:C027-01-0890/2024
-
-GITHUB LINK:https://github.com/lucykimani4948-stack/gighub-api.git'
+\# HealthTrack API - Patient Records System
 
 
 
-BookStore API
+\## Student Information
+
+\- \*\*Name:\*\* Lucy Wambui Kimani
+
+\- \*\*Registration:\*\* C027-01-0890/2024
+
+\- \*\*Course:\*\* User Authentication - JWT \& Password Hashing
 
 
 
-Overview
-
-A complete RESTful API for managing a bookstore's inventory, authors, publishers, and reviews. Built with FastAPI, SQLModel, and PostgreSQL.
+\---
 
 
 
-&#x20;Features
+\## Project Overview
 
 
 
-Core Features
-
-\- Authors - Create, Read, Update, Delete authors
-
-\- Publishers - Create, Read, Update, Delete publishers
-
-\- Books - Complete CRUD operations with relationships
-
-\- Reviews - Add and manage book reviews with ratings
+HealthTrack is a secure platform for patients to access their medical records and for doctors to manage patient data. The system implements industry-standard security practices including JWT authentication, password hashing, role-based access control, and two-factor authentication.
 
 
 
-Advanced Features
-
-\- Search - Search books by title, description, or genre
-
-\- Filtering - Filter by genre, price range, stock status, rating
-
-\- Pagination - Skip/Limit for large datasets
-
-\- Stock Management - Set, Add, Subtract operations
-
-\- Bulk Operations - Create/Delete multiple books at once
-
-\- Statistics- Comprehensive analytics dashboard
-
-\-CSV Export - Download all books as CSV
-
-\- Error Handling - Proper HTTP status codes (400, 404, 422)
-
-\- Auto Documentation- Swagger UI \& ReDoc
+\### Features Implemented
 
 
 
-&#x20;Technology Stack
+\- User Registration \& Login
+
+\- JWT Authentication
+
+\- Password Hashing (bcrypt)
+
+\- Role-Based Access Control (Patient, Doctor, Admin)
+
+\- Password Reset Functionality
+
+\- Token Blacklisting (Logout)
+
+\- Two-Factor Authentication (2FA)
+
+\- Patient Management
 
 
 
-| Technology | Purpose 
-
-|------------|---------|
-
-| FastAPI| Web Framework |
-
-| SQLModel | ORM with type hints |
-
-| PostgreSQL | Database |
-
-| Docker | Containerization |
-
-| Pydantic| Data Validation |
-
-| Uvicorn | ASGI Server |
+\---
 
 
 
-&#x20;Database Schema
+\## Technologies Used
 
 
+
+\- \*\*Framework:\*\* FastAPI
+
+\- \*\*Database:\*\* SQLite (SQLModel)
+
+\- \*\*Authentication:\*\* JWT (python-jose)
+
+\- \*\*Password Hashing:\*\* bcrypt (passlib)
+
+\- \*\*2FA:\*\* pyotp
+
+\- \*\*Language:\*\* Python 3.13
+
+
+
+\---
+
+
+
+\## API Endpoints
+
+
+
+\### Authentication
+
+| Method | Endpoint | Description |
+
+|--------|----------|-------------|
+
+| POST | `/register` | Register new user |
+
+| POST | `/login` | Login \& get JWT token |
+
+| POST | `/logout` | Logout \& invalidate token |
+
+| POST | `/forgot-password` | Request password reset |
+
+| POST | `/reset-password` | Reset password with token |
+
+| POST | `/login-2fa` | Login with 2FA verification |
+
+
+
+\### User Management
+
+| Method | Endpoint | Description | Access |
+
+|--------|----------|-------------|--------|
+
+| GET | `/users/me` | Get user profile | Authenticated |
+
+| PUT | `/users/me` | Update user profile | Authenticated |
+
+| GET | `/users` | List all users | Admin only |
+
+| POST | `/users/enable-2fa` | Enable 2FA | Authenticated |
+
+| POST | `/users/verify-2fa` | Verify 2FA | Authenticated |
+
+| POST | `/users/disable-2fa` | Disable 2FA | Authenticated |
+
+
+
+\### Patient Management
+
+| Method | Endpoint | Description | Access |
+
+|--------|----------|-------------|--------|
+
+| POST | `/patients` | Create patient record | Doctor/Admin |
+
+| GET | `/patients` | List patients | Doctor/Admin |
+
+| GET | `/patients/{id}` | Get patient by ID | Based on role |
+
+
+
+\---
+
+
+
+\## Setup Instructions
+
+
+
+\### 1. Clone Repository
+
+```bash
+
+git clone https://github.com/lucykimani4948-stack/gighub-api.git
+
+cd gighub-api
 
