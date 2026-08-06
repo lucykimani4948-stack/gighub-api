@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿services:
   db:
     image: postgres:16
@@ -8,13 +9,33 @@
       POSTGRES_DB: sendit_db
     ports:
       - "5433:5432"  # Changed from 5432 to 5433 to avoid conflict
+=======
+services:
+  db:
+    image: postgres:16
+    container_name: product_db
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: product_db
+    ports:
+      - "5432:5432"
+>>>>>>> 383572f8d900134b027b956946a9f34aecffa115
     volumes:
       - postgres_data:/var/lib/postgresql/data
     healthcheck:
       test: ["CMD-SHELL", "pg_isready -U postgres"]
+<<<<<<< HEAD
       interval: 5s
+=======
+      interval: 10s
+>>>>>>> 383572f8d900134b027b956946a9f34aecffa115
       timeout: 5s
       retries: 5
 
 volumes:
+<<<<<<< HEAD
   postgres_data:
+=======
+  postgres_data:
+>>>>>>> 383572f8d900134b027b956946a9f34aecffa115
